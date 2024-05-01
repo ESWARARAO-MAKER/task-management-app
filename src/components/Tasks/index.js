@@ -25,7 +25,7 @@ export const Tasks = () => {
     let todoList = getTodoListFromLocalStorage()
 
     const onCreateTask = () => {
-        if (username != "" && username != " "){
+        if (username !== "" && username !== " "){
             let newTodo = {
                 taskName : username,
                 taskDesc : desc ? desc : "",
