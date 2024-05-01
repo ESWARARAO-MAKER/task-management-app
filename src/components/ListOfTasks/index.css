@@ -1,0 +1,109 @@
+.list-of-tasks{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    box-sizing: border-box;
+    padding: 40px;
+}
+.summary-container{
+    display: flex;
+    gap: 30px;
+    border: 1px solid #c367eb;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+}
+.summary-container>h6{
+    box-sizing: border-box;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #c367eb;
+    border-radius: 50%;
+    font-weight: 800;
+}
+.summary>h6{
+    font-weight: 800;
+}
+.tasks-search{
+    display: flex;
+    width: 50%;
+    position: relative;
+}
+.tasks-search>input{
+    width: 100%;
+    border: 1px solid #c367eb;
+    outline: none;
+    height: 55px;
+    border-radius: 10px;
+}
+.tasks-search>input::placeholder{
+    padding: 0px 40px;
+}
+.tasks-search>span{
+    position: absolute;
+    top: 25%;
+    left: 20px;
+}
+.task{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    border: 1px solid #c367eb;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+}
+.task-name>h6{
+    font-weight: 800;
+}
+.task-dates-edit{
+    display: flex;
+    gap: 10px;
+}
+.task-dates{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.edit{
+    height: 90%;
+    font-size: 25px;
+}
+.edits-con{
+    position: relative;
+}
+.edit-options{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 7px;
+    height: 100px;
+    position: absolute;
+    z-index: 2;
+}
+.edit-options>span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90px;
+}
+
+@media screen and (max-width: 770px) {
+    .summary-container{
+        width: 100%;
+    }
+    .task{
+        width: 100%;
+    }
+    .tasks-search{
+        width: 100%;
+    }
+}

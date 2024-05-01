@@ -1,0 +1,33 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    max-width: 1024px;
+    position: relative;
+}
+.add-btn{
+    position: absolute;
+    font-size: 50px;
+    bottom: 10%;
+    right: 0px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    background-color: #c367eb;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.add-btn:hover{
+    transform: scale(0.8);
+}
+
+@media screen and (max-width : 790px) {
+    .add-btn{
+        right: 10px;
+    }
+}

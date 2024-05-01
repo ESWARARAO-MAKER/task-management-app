@@ -1,0 +1,122 @@
+.navbar-container{
+    position: relative;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    width: 100%;
+    max-width: 1024px;
+}
+.logo-container{
+    display: flex;
+    gap: 20px;
+}
+.greet-text{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.greet{
+    font-weight: 800;
+    font-size: 20px;
+}
+.greeting{
+    box-sizing: border-box;
+    padding: 10px 0px;
+}
+.calender{
+    font-size: 25px;
+}
+.person{
+    font-size: 45px;
+    cursor: pointer;
+}
+.open-menu-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    position: absolute;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 30px 40px;
+    width: 300px;
+    top: 0px;
+    right: 0px;
+    border-radius: 10px;
+    z-index: 3;
+}
+.open-menu-container>div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.link>h6, .open-menu-container>div>h4{
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+.open-menu-container>div>h4>span>span{
+    color: rgb(119, 100, 232);
+    font-weight: 800;
+}
+.link>h6:hover{
+    cursor: pointer;
+    background-color: gray;
+    border: none;
+    border-radius: 7px;
+    width: 100%;
+}
+.logout-btn{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 7px;
+    box-sizing: border-box;
+    padding: 10px;
+    font-weight: 600;
+}
+.logout-btn:hover{
+    background-color: black;
+    color: white;
+}
+.logout-icon{
+    font-size: 20px;
+}
+.open-menu-container>span{
+    position: absolute;
+    right: 0px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.open-menu-container>span:hover{
+    background-color: gray;
+    color: white;
+}
+
+p{
+    background-color: black;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    width: 30%;
+    position: fixed;
+    top: 80vh;
+    color: white;
+    text-align: center;
+}
